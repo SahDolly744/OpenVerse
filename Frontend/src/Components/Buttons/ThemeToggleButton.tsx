@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 const ThemeToggleButton = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
@@ -10,7 +10,7 @@ const ThemeToggleButton = () => {
     return (
         <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            className="p-1 text-xs text-primaryText bg-card border border-red-100 rounded-full"
+            className="p-1.5 text-sm flex shadow-inner items-center justify-center text-primaryText rounded-full transition-transform hover:scale-110 border border-border/50"
         >
             {theme === 'light' ? '☀️' : '🌙'}
         </button>

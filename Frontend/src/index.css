@@ -14,25 +14,6 @@
         @apply transition-colors duration-300 ease-in-out;
     }
 }
-/* Light theme */
-/* 
-:root{
-    --bg-primary : #f9fafb;
-    --text-primary : #111827;
-    --card-bg :#f9fafb;
-    --accent : #3b82f6;
-}
-
-/* Dark theme */
-/* .dark{
-    --bg-primary : #0C2B4E;
-    --text-primary : #1A3D64;
-    --card-bg :#1D546C;
-    --accent : #F4F4F4;
-    --error : #ff4d4f;
-    --success : #52c41a;
-    --warning : #faad14;
-}  */
 
 :root{
     --bg-primary : #F9FAFB;
@@ -51,15 +32,14 @@
 }
 
 .dark{
-    --bg-primary : #0C2B4E;  
-    /* --bg-primary :#1A0834; */
-    --text-primary : #EAF2FF; /* light readable text */
+    --bg-primary : #0C2B4E;
+    --text-primary : #EAF2FF;
     --text-secondary : #AFC4E0;
 
-    --card-bg : #123A5A;      /* slightly lighter than bg */
+    --card-bg : #123A5A;
     --border : #1E4E73;
 
-    --accent : #3B82F6;       /* keep blue accent */
+    --accent : #3B82F6;
     --accent-hover : #2563EB;
 
     --error : #EF4444;
