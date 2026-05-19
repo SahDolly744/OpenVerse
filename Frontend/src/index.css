@@ -3,46 +3,73 @@
 @tailwind utilities;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 @layer base {
-    *{
+    * {
         @apply transition-colors duration-300 ease-in-out;
     }
 }
 
-:root{
-    --bg-primary : #F9FAFB;
-    --text-primary : #111827;
-    --text-secondary : #4B5563;
-
-    --card-bg : #FFFFFF;
-    --border : #E5E7EB;
-
-    --accent : #3B82F6;
-    --accent-hover : #2563EB;
-
-    --error : #EF4444;
-    --success : #22C55E;
-    --warning : #F59E0B;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.dark{
-    --bg-primary : #0C2B4E;
-    --text-primary : #EAF2FF;
-    --text-secondary : #AFC4E0;
-
-    --card-bg : #123A5A;
-    --border : #1E4E73;
-
-    --accent : #3B82F6;
-    --accent-hover : #2563EB;
-
-    --error : #EF4444;
-    --success : #22C55E;
-    --warning : #F59E0B;
+/* Track */
+::-webkit-scrollbar-track {
+  background: theme('colors.primaryBgDark');
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme('colors.primaryBg') !important;
+  border-top: 2px solid theme('colors.primaryBgDark');
+  border-bottom: 2px solid theme('colors.primaryBgDark');
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* :root {
+    --bg-primary: #F9FAFB;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+
+    --card-bg: #FFFFFF;
+    --border: #E5E7EB;
+
+    --accent: #3B82F6;
+    --accent-hover: #2563EB;
+
+    --error: #EF4444;
+    --success: #22C55E;
+    --warning: #F59E0B;
+}
+
+.dark {
+    --bg-primary: #0C2B4E;
+    --text-primary: #EAF2FF;
+    --text-secondary: #AFC4E0;
+
+    --card-bg: #123A5A;
+    --border: #1E4E73;
+
+    --accent: #3B82F6;
+    --accent-hover: #2563EB;
+
+    --error: #EF4444;
+    --success: #22C55E;
+    --warning: #F59E0B;
+} */

@@ -9,10 +9,10 @@ const HeroSection = () => {
                 <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-semibold tracking-wide">
                     Introducing Open Verse 1.0
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-primaryText mb-6 tracking-tight">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold dark:text-primaryTextDark text-primaryText mb-6 tracking-tight">
                     Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentHover">Open Verse</span>
                 </h1>
-                <p className="text-lg md:text-xl text-secondaryText mb-10 max-w-xl leading-relaxed">
+                <p className="text-lg md:text-xl dark:text-secondaryTextDark text-secondaryText mb-10 max-w-xl leading-relaxed">
                     Discover a universe of knowledge. The most modern, sleek, and open platform for sharing ideas, reading blogs, and connecting with the community.
                 </p>
 
@@ -26,7 +26,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="relative z-10 w-full md:w-[40%] flex justify-center mt-12 md:mt-0 relative group">
+            <div className="z-10 w-full md:w-[40%] flex justify-center mt-12 md:mt-0 relative group">
                 <img
                     src="/images/heroImage.png"
                     alt="Open Verse Hero"

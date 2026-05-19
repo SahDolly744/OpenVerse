@@ -50,10 +50,10 @@ const PopularBlogsSection = () => {
 
             <div className="relative z-10 flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-primaryText mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold dark:text-primaryTextDark text-primaryText mb-4">
                         Popular <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentHover">Blogs</span>
                     </h2>
-                    <p className="text-secondaryText text-lg max-w-2xl">
+                    <p className="dark:text-secondaryTextDark text-secondaryText text-lg max-w-2xl">
                         Dive into our most-read articles and discover insights from top creators around the world.
                     </p>
                 </div>
@@ -65,7 +65,7 @@ const PopularBlogsSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {POPULAR_BLOGS.map((blog) => (
-                    <div key={blog.id} className="group flex flex-col bg-card rounded-2xl border border-border overflow-hidden hover:bg-primaryBg hover:border-accent hover:shadow-xl transition-all duration-500">
+                    <div key={blog.id} className="group flex flex-col dark:bg-cardDark bg-card rounded-2xl border border-border overflow-hidden hover:dark:bg-primaryBgDark hover:border-accent hover:shadow-xl transition-all duration-500">
                         <div className="relative h-56 overflow-hidden">
                             <img
                                 src={blog.image}
@@ -73,17 +73,17 @@ const PopularBlogsSection = () => {
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                             />
                             <div className="absolute top-4 left-4">
-                                <span className="px-3 py-1 bg-white/90 dark:bg-black/80 backdrop-blur-sm text-primaryText text-xs font-semibold rounded-full shadow-sm">
+                                <span className="px-3 py-1 bg-white/90 dark:bg-black/80 backdrop-blur-sm dark:text-primaryTextDark text-primaryText text-xs font-semibold rounded-full shadow-sm">
                                     {blog.category}
                                 </span>
                             </div>
                         </div>
 
                         <div className="p-6 flex flex-col flex-grow">
-                            <h3 className="text-xl font-bold text-primaryText mb-3 line-clamp-2 group-hover:text-accent transition-colors">
+                            <h3 className="text-xl font-bold dark:text-primaryTextDark text-primaryText mb-3 line-clamp-2 group-hover:text-accent transition-colors">
                                 <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
                             </h3>
-                            <p className="text-secondaryText text-sm mb-6 line-clamp-3 flex-grow">
+                            <p className="dark:text-secondaryTextDark text-secondaryText text-sm mb-6 line-clamp-3 flex-grow">
                                 {blog.excerpt}
                             </p>
 
@@ -95,15 +95,15 @@ const PopularBlogsSection = () => {
                                         className="w-10 h-10 rounded-full object-cover border-2 border-primaryBg"
                                     />
                                     <div>
-                                        <p className="text-sm font-semibold text-primaryText">
+                                        <p className="text-sm font-semibold dark:text-primaryTextDark text-primaryText">
                                             {blog.author.name}
                                         </p>
-                                        <p className="text-xs text-secondaryText">
+                                        <p className="text-xs dark:text-secondaryTextDark text-secondaryText">
                                             {blog.date}
                                         </p>
                                     </div>
                                 </div>
-                                <div className="text-xs font-medium text-secondaryText bg-primaryBg px-2.5 py-1 rounded-md">
+                                <div className="text-xs font-medium dark:text-secondaryTextDark text-secondaryText dark:bg-primaryBgDark bg-primaryBg px-2.5 py-1 rounded-md">
                                     {blog.readTime}
                                 </div>
                             </div>
